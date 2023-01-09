@@ -14,6 +14,9 @@ public class RandomSpawnSys : MonoBehaviour
     public int spawnOne = 0;
     public int spawnTwo = 0;
     public int spawnThree = 0;
+    public static int spawnRate1 = 3;
+    public static int spawnRate2 = 6;
+    public static int spawnRate3 = 8;
 
     void Start()
     {
@@ -34,82 +37,73 @@ public class RandomSpawnSys : MonoBehaviour
             spawnOne = Random.Range(0,10);
             if(spawnOne == 1)
             {
-                Debug.Log("spawn 1");
+                
                 Vector3 pos1 = new Vector3(x-7, transform.position.y + 1);
                 Instantiate(fruit, pos1, Quaternion.identity);
-                yield return new WaitForSeconds(3);
+                yield return new WaitForSeconds(spawnRate1);
                 
             }
             else if(spawnOne == 2)
             {
-                Debug.Log("spawn 2");
                 Vector3 pos2 = new Vector3(x-5, transform.position.y + 1);
                 Instantiate(fruit, pos2, Quaternion.identity);
-                yield return new WaitForSeconds(3);
+                yield return new WaitForSeconds(spawnRate1);
                 
             }
             else if(spawnOne == 3)
             {
-                Debug.Log("spawn 3");
                 Vector3 pos2 = new Vector3(x-3, transform.position.y + 1);
                 Instantiate(fruit, pos2, Quaternion.identity);
-                yield return new WaitForSeconds(3);
+                yield return new WaitForSeconds(spawnRate1);
                 
             }
             else if(spawnOne == 4)
             {
-                Debug.Log("spawn 4");
                 Vector3 pos2 = new Vector3(x-1, transform.position.y + 1);
                 Instantiate(fruit, pos2, Quaternion.identity);
-                yield return new WaitForSeconds(3);
+                yield return new WaitForSeconds(spawnRate1);
                 
             }
             else if(spawnOne == 5)
             {
-                Debug.Log("spawn 5");
                 Vector3 pos2 = new Vector3(x+1, transform.position.y + 1);
                 Instantiate(fruit, pos2, Quaternion.identity);
-                yield return new WaitForSeconds(3);
+                yield return new WaitForSeconds(spawnRate1);
                 
             }
             else if(spawnOne == 6)
             {
-                Debug.Log("spawn 6");
                 Vector3 pos2 = new Vector3(x+3, transform.position.y + 1);
                 Instantiate(fruit, pos2, Quaternion.identity);
-                yield return new WaitForSeconds(3);
+                yield return new WaitForSeconds(spawnRate1);
                 
             }
             else if(spawnOne == 7)
             {
-                Debug.Log("spawn 7");
                 Vector3 pos2 = new Vector3(x+5, transform.position.y + 1);
                 Instantiate(fruit, pos2, Quaternion.identity);
-                yield return new WaitForSeconds(3);
+                yield return new WaitForSeconds(spawnRate1);
                 
             }
             else if(spawnOne == 8)
             {
-                Debug.Log("spawn 8");
                 Vector3 pos2 = new Vector3(x+7, transform.position.y + 1);
                 Instantiate(fruit, pos2, Quaternion.identity);
-                yield return new WaitForSeconds(3);
+                yield return new WaitForSeconds(spawnRate1);
                 
             }
             else if(spawnOne == 9)
             {
-                Debug.Log("spawn 9");
                 Vector3 pos2 = new Vector3(x-9, transform.position.y + 1);
                 Instantiate(fruit, pos2, Quaternion.identity);
-                yield return new WaitForSeconds(3);
+                yield return new WaitForSeconds(spawnRate1);
                 
             }
             else
             {
-                Debug.Log("spawn 10");
                 Vector3 pos2 = new Vector3(x+9, transform.position.y + 1);
                 Instantiate(fruit, pos2, Quaternion.identity);
-                yield return new WaitForSeconds(3);
+                yield return new WaitForSeconds(spawnRate1);
                 
             }
         }
@@ -122,82 +116,72 @@ public class RandomSpawnSys : MonoBehaviour
             spawnTwo = Random.Range(0,10);
             if(spawnTwo == 1)
             {
-                Debug.Log("spawn 1");
                 Vector3 pos1 = new Vector3(x-7, transform.position.y + 1);
                 Instantiate(Scrap, pos1, Quaternion.identity);
-                yield return new WaitForSeconds(6);
+                yield return new WaitForSeconds(spawnRate2);
                 
             }
             else if(spawnTwo == 2)
             {
-                Debug.Log("spawn 2");
                 Vector3 pos2 = new Vector3(x-5, transform.position.y + 1);
                 Instantiate(Scrap, pos2, Quaternion.identity);
-                yield return new WaitForSeconds(6);
+                yield return new WaitForSeconds(spawnRate2);
                 
             }
             else if(spawnTwo == 3)
             {
-                Debug.Log("spawn 3");
                 Vector3 pos2 = new Vector3(x-3, transform.position.y + 1);
                 Instantiate(Scrap, pos2, Quaternion.identity);
-                yield return new WaitForSeconds(6);
+                yield return new WaitForSeconds(spawnRate2);
                 
             }
             else if(spawnTwo == 4)
             {
-                Debug.Log("spawn 4");
                 Vector3 pos2 = new Vector3(x-1, transform.position.y + 1);
                 Instantiate(Scrap, pos2, Quaternion.identity);
-                yield return new WaitForSeconds(6);
+                yield return new WaitForSeconds(spawnRate2);
                 
             }
             else if(spawnTwo == 5)
             {
-                Debug.Log("spawn 5");
                 Vector3 pos2 = new Vector3(x+1, transform.position.y + 1);
                 Instantiate(Scrap, pos2, Quaternion.identity);
-                yield return new WaitForSeconds(6);
+                yield return new WaitForSeconds(spawnRate2);
                 
             }
             else if(spawnTwo == 6)
             {
-                Debug.Log("spawn 6");
                 Vector3 pos2 = new Vector3(x+3, transform.position.y + 1);
                 Instantiate(Scrap, pos2, Quaternion.identity);
-                yield return new WaitForSeconds(6);
+                yield return new WaitForSeconds(spawnRate2);
                 
             }
             else if(spawnTwo == 7)
             {
-                Debug.Log("spawn 7");
                 Vector3 pos2 = new Vector3(x+5, transform.position.y + 1);
                 Instantiate(Scrap, pos2, Quaternion.identity);
-                yield return new WaitForSeconds(6);
+                yield return new WaitForSeconds(spawnRate2);
                 
             }
             else if(spawnTwo == 8)
             {
-                Debug.Log("spawn 8");
                 Vector3 pos2 = new Vector3(x+7, transform.position.y + 1);
                 Instantiate(Scrap, pos2, Quaternion.identity);
-                yield return new WaitForSeconds(6);
+                yield return new WaitForSeconds(spawnRate2);
                 
             }
             else if(spawnTwo == 9)
             {
-                Debug.Log("spawn 9");
                 Vector3 pos2 = new Vector3(x-9, transform.position.y + 1);
                 Instantiate(Scrap, pos2, Quaternion.identity);
-                yield return new WaitForSeconds(6);
+                yield return new WaitForSeconds(spawnRate2);
                 
             }
             else
             {
-                Debug.Log("spawn 10");
                 Vector3 pos2 = new Vector3(x+9, transform.position.y + 1);
                 Instantiate(fruit, pos2, Quaternion.identity);
-                yield return new WaitForSeconds(6);
+                yield return new WaitForSeconds(spawnRate2);
                 
             }
         }
@@ -210,82 +194,72 @@ public class RandomSpawnSys : MonoBehaviour
             spawnThree = Random.Range(0,10);
             if(spawnOne == 1)
             {
-                Debug.Log("spawn 1");
                 Vector3 pos1 = new Vector3(x-7, transform.position.y + 1);
                 Instantiate(Enemy, pos1, Quaternion.identity);
-                yield return new WaitForSeconds(8);
+                yield return new WaitForSeconds(spawnRate3);
                 
             }
             else if(spawnThree == 2)
             {
-                Debug.Log("spawn 2");
                 Vector3 pos2 = new Vector3(x-5, transform.position.y + 1);
                 Instantiate(Enemy, pos2, Quaternion.identity);
-                yield return new WaitForSeconds(8);
+                yield return new WaitForSeconds(spawnRate3);
                 
             }
             else if(spawnThree == 3)
             {
-                Debug.Log("spawn 3");
                 Vector3 pos2 = new Vector3(x-3, transform.position.y + 1);
                 Instantiate(Enemy, pos2, Quaternion.identity);
-                yield return new WaitForSeconds(8);
+                yield return new WaitForSeconds(spawnRate3);
                 
             }
             else if(spawnThree == 4)
             {
-                Debug.Log("spawn 4");
                 Vector3 pos2 = new Vector3(x-1, transform.position.y + 1);
                 Instantiate(Enemy, pos2, Quaternion.identity);
-                yield return new WaitForSeconds(8);
+                yield return new WaitForSeconds(spawnRate3);
                 
             }
             else if(spawnThree == 5)
             {
-                Debug.Log("spawn 5");
                 Vector3 pos2 = new Vector3(x+1, transform.position.y + 1);
                 Instantiate(Enemy, pos2, Quaternion.identity);
-                yield return new WaitForSeconds(8);
+                yield return new WaitForSeconds(spawnRate3);
                 
             }
             else if(spawnThree == 6)
             {
-                Debug.Log("spawn 6");
                 Vector3 pos2 = new Vector3(x+3, transform.position.y + 1);
                 Instantiate(Enemy, pos2, Quaternion.identity);
-                yield return new WaitForSeconds(8);
+                yield return new WaitForSeconds(spawnRate3);
                 
             }
             else if(spawnThree == 7)
             {
-                Debug.Log("spawn 7");
                 Vector3 pos2 = new Vector3(x+5, transform.position.y + 1);
                 Instantiate(Enemy, pos2, Quaternion.identity);
-                yield return new WaitForSeconds(8);
+                yield return new WaitForSeconds(spawnRate3);
                 
             }
             else if(spawnThree == 8)
             {
-                Debug.Log("spawn 8");
                 Vector3 pos2 = new Vector3(x+7, transform.position.y + 1);
                 Instantiate(Enemy, pos2, Quaternion.identity);
-                yield return new WaitForSeconds(8);
+                yield return new WaitForSeconds(spawnRate3);
                 
             }
             else if(spawnThree == 9)
             {
-                Debug.Log("spawn 9");
                 Vector3 pos2 = new Vector3(x-9, transform.position.y + 1);
                 Instantiate(Enemy, pos2, Quaternion.identity);
-                yield return new WaitForSeconds(8);
+                yield return new WaitForSeconds(spawnRate3);
                 
             }
             else
             {
-                Debug.Log("spawn 10");
                 Vector3 pos2 = new Vector3(x+9, transform.position.y + 1);
                 Instantiate(Enemy, pos2, Quaternion.identity);
-                yield return new WaitForSeconds(8);
+                yield return new WaitForSeconds(spawnRate3);
                 
             }
         }

@@ -12,7 +12,6 @@ public class MedCollisionSys : MonoBehaviour
     void OnBecameInvisible() 
     {
         Destroy(gameObject);
-        Debug.Log("Destroyed");
     }
     /*private void OnCollisionEnter2D(Collision2D collision)
     {

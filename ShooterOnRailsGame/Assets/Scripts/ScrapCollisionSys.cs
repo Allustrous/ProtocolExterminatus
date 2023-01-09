@@ -6,16 +6,31 @@ public class ScrapCollisionSys : MonoBehaviour
 {
     public static float dropSpeed = 0.8f;
     public GameObject Scrap;
-    public static int scrapDur = 5;
-    public GameObject RateKit;
+    public static int scrapDur = 3;
+    public GameObject SpeedKit;
     public Vector3 ScrapPos;
 
     void OnBecameInvisible() 
     {
         Destroy(gameObject);
-        Debug.Log("Destroyed");
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D (Collider2D targetObj) 
+    {
+       if(targetObj.gameObject.tag == "Bullet")
+        {
+            scrapDur -=1;
+            Destroy(targetObj.gameObject);
+            if(scrapDur <= 0)
+            {
+                Destroy(gameObject);
+                Instantiate(SpeedKit, ScrapPos, Quaternion.identity);
+                ScoreUI.scr +=2;
+                scrapDur = 5;
+            }
+            
+        } 
+    }
+    /*private void OnCollisionEnter2D(Collision2D collision)
     {
         scrapDur -=1;
 
@@ -26,7 +41,7 @@ public class ScrapCollisionSys : MonoBehaviour
             Debug.Log("Shot");
             scrapDur = 5;
         }
-    }
+    }*/
     void Update () {
         ScrapPos = Scrap.transform.position;
         transform.position += -transform.up * dropSpeed * Time.deltaTime;

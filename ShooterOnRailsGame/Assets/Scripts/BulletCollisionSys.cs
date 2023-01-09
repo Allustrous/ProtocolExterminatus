@@ -11,13 +11,14 @@ public class BulletCollisionSys : MonoBehaviour
     void OnBecameInvisible() 
     {
         Destroy(gameObject);
-        Debug.Log("Destroyed");
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+
+
+    /*private void OnCollisionEnter2D(Collision2D collision)
     {
         Destroy(bullet);
         Debug.Log("Destroyed");
-    }
+    }*/
     void Update () {
         transform.position += transform.up * bulletVelocity * Time.deltaTime;
     }

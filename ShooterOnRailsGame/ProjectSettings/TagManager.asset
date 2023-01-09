@@ -9,6 +9,7 @@ TagManager:
   - MedKit
   - SpeedKit
   - RateKit
+  - Bullet
   layers:
   - Default
   - TransparentFX

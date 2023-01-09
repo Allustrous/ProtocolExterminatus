@@ -9,6 +9,10 @@ public class CharacterMovement : MonoBehaviour
     public GameObject fruit;
     public GameObject Scrap;
     public GameObject Enemy;
+    public static int FireRateMeter = 0;
+    public static int BulletVelMeter = 0;
+
+    
 
     private float xMin, xMax;
     private float yMin, yMax;
@@ -53,8 +57,12 @@ public class CharacterMovement : MonoBehaviour
  
         var xValidPosition = Mathf.Clamp(transform.position.x + direction.x, xMin, xMax);
         var yValidPosition = Mathf.Clamp(transform.position.y + direction.y, yMin, yMax);
+
  
         transform.position = new Vector3(xValidPosition, -4, 0f);
+
+
+        
         /*if(Input.GetKeyDown(KeyCode.A))
         {
             PlayerShip.transform.position = posLeft;
@@ -74,7 +82,7 @@ public class CharacterMovement : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        HealthUI.hp -= 1;
+        
     }
 
     void OnTriggerEnter2D (Collider2D targetObj) 
@@ -83,15 +91,53 @@ public class CharacterMovement : MonoBehaviour
         {
             HealthUI.hp += 1;
             Destroy(targetObj.gameObject);
+            ScoreUI.scr +=3;
         }
         else if(targetObj.gameObject.tag == "SpeedKit")
         {
-            BulletCollisionSys.bulletVelocity += 0.5f;
+            BulletVelMeter++;
             Destroy(targetObj.gameObject);
+            ScoreUI.scr +=2;
+            if(BulletVelMeter == 1)
+            {
+                BulletCollisionSys.bulletVelocity += 1.0f;
+                Debug.Log("Bullet Velocity Up!");
+            }
+            else if(BulletVelMeter == 2)
+            {
+                BulletCollisionSys.bulletVelocity += 1.0f;
+                Debug.Log("Bullet Velocity Up!");
+            }
+            else if(BulletVelMeter == 3)
+            {
+                BulletCollisionSys.bulletVelocity += 1.0f;
+                Debug.Log("Bullet Velocity Up!");
+            }
         }
         else if(targetObj.gameObject.tag == "RateKit")
         {
-            CharacterWeaponSys.fireRate -= 0.5f;
+            FireRateMeter++;
+            Destroy(targetObj.gameObject);
+            ScoreUI.scr +=1;
+            if(FireRateMeter == 1)
+            {
+                CharacterWeaponSys.fireRate -= 1.0f;
+                Debug.Log("Fire Rate Up!");
+            }
+            else if(FireRateMeter == 2)
+            {
+                CharacterWeaponSys.fireRate -= 1.0f;
+                Debug.Log("Fire Rate Up!");
+            }
+            else if(FireRateMeter == 3)
+            {
+                CharacterWeaponSys.fireRate -= 1.0f;
+                Debug.Log("Fire Rate Up!");
+            }
+        }
+        else if(targetObj.gameObject.tag == "Fragile")
+        {
+            HealthUI.hp -= 1;
             Destroy(targetObj.gameObject);
         }
     }
