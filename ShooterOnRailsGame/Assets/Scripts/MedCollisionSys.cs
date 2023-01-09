@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DropCollisionSys : MonoBehaviour
+public class MedCollisionSys : MonoBehaviour
 {
-    public static float dropSpeed = 1f;
-    public GameObject Drop;
+    public float dropSpeed = 1f;
+    public GameObject MedKit;
     public HealthUI hpUI;
 
 
@@ -14,11 +14,11 @@ public class DropCollisionSys : MonoBehaviour
         Destroy(gameObject);
         Debug.Log("Destroyed");
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    /*private void OnCollisionEnter2D(Collision2D collision)
     {
         HealthUI.hp += 2;
         Destroy(gameObject);
-    }
+    }*/
      void Update () {
         transform.position += -transform.up * dropSpeed * Time.deltaTime;
     }

@@ -6,9 +6,9 @@ public class EnemyCollisionSys : MonoBehaviour
 {
     public static float dropSpeed = 0.5f;
     public GameObject Enemy;
-    public GameObject Drop;
+    public GameObject MedKit;
     public Vector3 EnemyPos;
-    public static int enemyDur = 3;
+    public static int enemyDur = 10;
 
 
     void OnBecameInvisible() 
@@ -24,7 +24,8 @@ public class EnemyCollisionSys : MonoBehaviour
         {
             Destroy(Enemy);
             Debug.Log("Shot");
-            Instantiate(Drop, EnemyPos, Quaternion.identity);
+            Instantiate(MedKit, EnemyPos, Quaternion.identity);
+            enemyDur = 10;
         }
     }
     void Update () {

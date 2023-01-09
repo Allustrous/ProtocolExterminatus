@@ -6,6 +6,8 @@ public class CometCollisionSys : MonoBehaviour
 {
     public static float dropSpeed = 1.0f;
     public GameObject fruit;
+    public GameObject SpeedKit;
+    public Vector3 CometPos;
 
     void OnBecameInvisible() 
     {
@@ -16,9 +18,10 @@ public class CometCollisionSys : MonoBehaviour
     {
         Destroy(fruit);
         Debug.Log("Shot");
+        Instantiate(SpeedKit, CometPos, Quaternion.identity);
     }
     void Update () {
- 
+        CometPos = fruit.transform.position;
         transform.position += -transform.up * dropSpeed * Time.deltaTime;
     }
 }

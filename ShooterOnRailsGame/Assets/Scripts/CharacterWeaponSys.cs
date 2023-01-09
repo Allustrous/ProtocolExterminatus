@@ -6,7 +6,7 @@ public class CharacterWeaponSys : MonoBehaviour
 {
     public GameObject playerShip;
     public GameObject projectile;
-    private float fireRate = 3.5f;
+    public static float fireRate = 3.5f;
     private float lastShot = 0.0f;
     private float timeStamp;
     

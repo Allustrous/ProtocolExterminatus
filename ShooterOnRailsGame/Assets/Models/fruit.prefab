@@ -145,4 +145,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruit: {fileID: 551886905311387953}
-  bullet: {fileID: 3775285386715046443, guid: 7ffa84feb1ff8d24dae68987dcdd3804, type: 3}
+  SpeedKit: {fileID: 1090676992940066958, guid: 40a4acbcad31f449fb8924524a151759, type: 3}
+  CometPos: {x: 0, y: 0, z: 0}

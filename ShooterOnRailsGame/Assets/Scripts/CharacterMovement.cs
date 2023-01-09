@@ -7,6 +7,8 @@ public class CharacterMovement : MonoBehaviour
     public static float shipSpeed = 5f;
     public GameObject PlayerShip;
     public GameObject fruit;
+    public GameObject Scrap;
+    public GameObject Enemy;
 
     private float xMin, xMax;
     private float yMin, yMax;
@@ -20,7 +22,6 @@ public class CharacterMovement : MonoBehaviour
     private Vector3 posRight;*/
 
     public HealthUI hpUI;
-    public string dropTag;
 
     // Start is called before the first frame update
     void Start()
@@ -76,11 +77,22 @@ public class CharacterMovement : MonoBehaviour
         HealthUI.hp -= 1;
     }
 
-    /*void OnTriggerEnter (Collider targetObj) 
+    void OnTriggerEnter2D (Collider2D targetObj) 
     {
-        if(targetObj.gameObject.tag == dropTag)
+        if(targetObj.gameObject.tag == "MedKit")
         {
+            HealthUI.hp += 1;
             Destroy(targetObj.gameObject);
         }
-    }*/
+        else if(targetObj.gameObject.tag == "SpeedKit")
+        {
+            BulletCollisionSys.bulletVelocity += 0.5f;
+            Destroy(targetObj.gameObject);
+        }
+        else if(targetObj.gameObject.tag == "RateKit")
+        {
+            CharacterWeaponSys.fireRate -= 0.5f;
+            Destroy(targetObj.gameObject);
+        }
+    }
 }

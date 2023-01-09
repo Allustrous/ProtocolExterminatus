@@ -145,5 +145,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy: {fileID: 5999005172836451834}
-  Drop: {fileID: 7483563495550933724, guid: 1905978264999d44ea4f5ee76ea7e4c9, type: 3}
+  MedKit: {fileID: 7483563495550933724, guid: 1905978264999d44ea4f5ee76ea7e4c9, type: 3}
   EnemyPos: {x: 0, y: 0, z: 0}

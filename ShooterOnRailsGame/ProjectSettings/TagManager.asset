@@ -6,7 +6,9 @@ TagManager:
   tags:
   - Kill Box
   - Fragile
-  - Drop
+  - MedKit
+  - SpeedKit
+  - RateKit
   layers:
   - Default
   - TransparentFX
