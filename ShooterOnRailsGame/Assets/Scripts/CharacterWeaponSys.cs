@@ -14,6 +14,8 @@ public class CharacterWeaponSys : MonoBehaviour
     void Start()
     {
         timeStamp = Time.time + fireRate;
+        fireRate = 3.5f;
+        lastShot = 0.0f;
     }
 
     // Update is called once per frame

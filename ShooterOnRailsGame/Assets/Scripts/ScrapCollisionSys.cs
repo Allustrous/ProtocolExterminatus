@@ -10,6 +10,11 @@ public class ScrapCollisionSys : MonoBehaviour
     public GameObject SpeedKit;
     public Vector3 ScrapPos;
 
+    void Start () {
+        dropSpeed = 0.8f;
+        scrapDur = 3;
+    }
+
     void OnBecameInvisible() 
     {
         Destroy(gameObject);

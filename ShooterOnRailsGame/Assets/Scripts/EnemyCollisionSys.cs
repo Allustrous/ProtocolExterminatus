@@ -10,6 +10,10 @@ public class EnemyCollisionSys : MonoBehaviour
     public Vector3 EnemyPos;
     public static int enemyDur = 6;
 
+    void Start () {
+        dropSpeed = 0.5f;
+        enemyDur = 6;
+    }
 
     void OnBecameInvisible() 
     {

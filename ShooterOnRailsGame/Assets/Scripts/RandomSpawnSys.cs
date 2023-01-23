@@ -21,13 +21,17 @@ public class RandomSpawnSys : MonoBehaviour
     void Start()
     {
         StartCoroutine("SpawnRoutine1");
-        StartCoroutine("SpawnRoutine2");
-        StartCoroutine("SpawnRoutine3");
     }
 
-    void Update()
+    public void SpawnScrap()
+    {
+        StartCoroutine("SpawnRoutine2");
+    }
+
+    public void SpawnEnemies()
     {
         
+        StartCoroutine("SpawnRoutine3");
     }
 
     IEnumerator SpawnRoutine1()

@@ -9,6 +9,10 @@ public class CometCollisionSys : MonoBehaviour
     public GameObject RateKit;
     public Vector3 CometPos;
 
+    void Start () {
+        dropSpeed = 1.0f;
+    }
+
     void OnBecameInvisible() 
     {
         Destroy(gameObject);

@@ -8,6 +8,10 @@ public class BulletCollisionSys : MonoBehaviour
     public GameObject fruit;
     public GameObject bullet;
 
+    void Start () {
+        bulletVelocity = 1.0f;
+    }
+
     void OnBecameInvisible() 
     {
         Destroy(gameObject);
