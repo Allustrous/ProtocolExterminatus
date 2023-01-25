@@ -8,6 +8,7 @@ public class CometCollisionSys : MonoBehaviour
     public GameObject fruit;
     public GameObject RateKit;
     public Vector3 CometPos;
+    public GameManagerSys deathDetection;
 
     void Start () {
         dropSpeed = 1.0f;
@@ -32,6 +33,7 @@ public class CometCollisionSys : MonoBehaviour
             Destroy(gameObject);
             Instantiate(RateKit, CometPos, Quaternion.identity);
             ScoreUI.scr +=1;
+            GameManagerSys.deathDetection++;
         } 
     }
 

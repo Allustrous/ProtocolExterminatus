@@ -23,10 +23,9 @@ public class GameOverUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-    public void MenuGame()
-    {
-        SceneManager.LoadScene("Menu");
+        if(Input.GetKeyDown("space"))
+        {
+            SceneManager.LoadScene("Menu");
+        }
     }
 }

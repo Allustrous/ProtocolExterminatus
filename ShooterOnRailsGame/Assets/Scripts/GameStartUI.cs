@@ -7,8 +7,12 @@ using TMPro;
 public class GameStartUI : MonoBehaviour
 {
     // Update is called once per frame
-    public void StartGame()
+
+    void Update()
     {
-        SceneManager.LoadScene("Game");
+        if(Input.GetKeyDown("space"))
+        {
+            SceneManager.LoadScene("Game");
+        }
     }
 }

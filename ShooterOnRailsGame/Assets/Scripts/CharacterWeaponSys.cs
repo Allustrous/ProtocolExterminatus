@@ -9,6 +9,8 @@ public class CharacterWeaponSys : MonoBehaviour
     public static float fireRate = 3.5f;
     private float lastShot = 0.0f;
     private float timeStamp;
+    public AudioSource source;
+    public AudioClip weaponFire;
     
     // Start is called before the first frame update
     void Start()
@@ -36,6 +38,7 @@ public class CharacterWeaponSys : MonoBehaviour
             if (Time.time > fireRate + lastShot)
             {
                 Instantiate(projectile, shipPos, Quaternion.identity);
+                source.PlayOneShot(weaponFire);
                 lastShot = Time.time;
             }
         }

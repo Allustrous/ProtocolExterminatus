@@ -26,11 +26,13 @@ public class ScrapCollisionSys : MonoBehaviour
             scrapDur -=1;
             Destroy(targetObj.gameObject);
             if(scrapDur <= 0)
+            GameManagerSys.hitDetection++;
             {
                 Destroy(gameObject);
                 Instantiate(SpeedKit, ScrapPos, Quaternion.identity);
                 ScoreUI.scr +=2;
                 scrapDur = 5;
+                GameManagerSys.deathDetection++;
             }
             
         } 

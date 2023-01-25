@@ -9,6 +9,8 @@ public class EnemyCollisionSys : MonoBehaviour
     public GameObject MedKit;
     public Vector3 EnemyPos;
     public static int enemyDur = 6;
+    public GameManagerSys hitDetection;
+    public GameManagerSys deathDetection;
 
     void Start () {
         dropSpeed = 0.5f;
@@ -26,12 +28,14 @@ public class EnemyCollisionSys : MonoBehaviour
         {
             enemyDur -=1;
             Destroy(targetObj.gameObject);
+            GameManagerSys.hitDetection++;
             if(enemyDur <= 0)
             {
                 Destroy(gameObject);
                 Instantiate(MedKit, EnemyPos, Quaternion.identity);
                 ScoreUI.scr +=3;
                 enemyDur = 10;
+                GameManagerSys.deathDetection++;
             }
             
         } 

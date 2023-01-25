@@ -11,6 +11,7 @@ public class CharacterMovement : MonoBehaviour
     public GameObject Enemy;
     public static int FireRateMeter = 0;
     public static int BulletVelMeter = 0;
+    public GameManagerSys hitDetection;
 
     
 
@@ -92,12 +93,14 @@ public class CharacterMovement : MonoBehaviour
             HealthUI.hp += 1;
             Destroy(targetObj.gameObject);
             ScoreUI.scr +=3;
+            GameManagerSys.upgradeDetection++;
         }
         else if(targetObj.gameObject.tag == "SpeedKit")
         {
             BulletVelMeter++;
             Destroy(targetObj.gameObject);
             ScoreUI.scr +=2;
+            GameManagerSys.upgradeDetection++;
             if(BulletVelMeter == 1)
             {
                 BulletCollisionSys.bulletVelocity += 1.0f;
@@ -119,6 +122,7 @@ public class CharacterMovement : MonoBehaviour
             FireRateMeter++;
             Destroy(targetObj.gameObject);
             ScoreUI.scr +=1;
+            GameManagerSys.upgradeDetection++;
             if(FireRateMeter == 1)
             {
                 CharacterWeaponSys.fireRate -= 1.0f;
@@ -139,6 +143,7 @@ public class CharacterMovement : MonoBehaviour
         {
             HealthUI.hp -= 1;
             Destroy(targetObj.gameObject);
+            GameManagerSys.hitDetection++;
         }
     }
 }

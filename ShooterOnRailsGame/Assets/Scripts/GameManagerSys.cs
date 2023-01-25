@@ -16,6 +16,35 @@ public class GameManagerSys : MonoBehaviour
     public static GameObject Comet;
     public static GameObject Scrap;
     public static GameObject Enemy;
+    public AudioSource source;
+
+    public AudioClip enemyHit;
+    public AudioClip enemyDead;
+    public AudioClip upgraded;
+
+    public static int hitDetection = 0;
+    public static int deathDetection = 0;
+    public static int upgradeDetection = 0;
+
+    void Update()
+    {
+        if(hitDetection == 1)
+        {
+            source.PlayOneShot(enemyHit);
+            hitDetection--;
+        }
+        if(deathDetection == 1)
+        {
+            source.PlayOneShot(enemyDead);
+            deathDetection--;
+        }
+        if(upgradeDetection == 1)
+        {
+            source.PlayOneShot(upgraded);
+            upgradeDetection--;
+        }
+    }
+
 
     
     // Start is called before the first frame update
@@ -39,7 +68,7 @@ public class GameManagerSys : MonoBehaviour
             yield return new WaitForSeconds(1);
             
             Timer++;
-            playtimer.SetText("Time: " + Timer.ToString()+"s");
+            playtimer.SetText("Time: " + Timer.ToString());
 
             if(HealthUI.hp == 0)
             {
@@ -91,4 +120,5 @@ public class GameManagerSys : MonoBehaviour
         //EnemyCollisionSys.dropSpeed += 1.0f;
 
     }
+
 }
