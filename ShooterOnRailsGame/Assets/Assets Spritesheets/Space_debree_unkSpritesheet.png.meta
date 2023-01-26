@@ -1,7 +1,25 @@
 fileFormatVersion: 2
 guid: 035d04317f34b73458552ed516b1f968
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 6149083216235974488
+    second: Space_debree_unkSpritesheet_0
+  - first:
+      213: -6576499563341276476
+    second: Space_debree_unkSpritesheet_1
+  - first:
+      213: -1409005062689154983
+    second: Space_debree_unkSpritesheet_4
+  - first:
+      213: 5365710505850294829
+    second: Space_debree_unkSpritesheet_11
+  - first:
+      213: 6011741009428586373
+    second: Space_debree_unkSpritesheet_12
+  - first:
+      213: -8295905462528915869
+    second: Space_debree_unkSpritesheet_14
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -41,7 +59,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -90,7 +108,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Space_debree_unkSpritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 146
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85fcf0e1b9ee55550800000000000000
+      internalID: 6149083216235974488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_debree_unkSpritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 149
+        width: 55
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca188dad749bb4a0800000000000000
+      internalID: -6576499563341276476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_debree_unkSpritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 150
+        width: 64
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9589fa75c55327ce0800000000000000
+      internalID: -1409005062689154983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_debree_unkSpritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 83
+        width: 55
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d22d9ccb645d67a40800000000000000
+      internalID: 5365710505850294829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_debree_unkSpritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 83
+        width: 62
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f93a4b89efd6350800000000000000
+      internalID: 6011741009428586373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Space_debree_unkSpritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 86
+        width: 64
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 366cdb77fe50fdc80800000000000000
+      internalID: -8295905462528915869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
