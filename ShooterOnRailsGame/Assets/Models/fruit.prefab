@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8615979796297237413}
   - component: {fileID: 7827409727577425136}
   - component: {fileID: -7559599486568818965}
+  - component: {fileID: 1303309027424887916}
   m_Layer: 0
   m_Name: fruit
   m_TagString: Fragile
@@ -147,3 +148,24 @@ MonoBehaviour:
   fruit: {fileID: 551886905311387953}
   RateKit: {fileID: 7934929702939525656, guid: 3a360443518f04394a83d0a12ac389c1, type: 3}
   CometPos: {x: 0, y: 0, z: 0}
+  deathDetection: {fileID: 0}
+  deathCometAnim: {fileID: 1303309027424887916}
+--- !u!95 &1303309027424887916
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551886905311387953}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e09c4abc6af91dd4ea7c24e96d4514cb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

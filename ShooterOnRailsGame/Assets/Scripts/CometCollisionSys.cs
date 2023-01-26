@@ -9,6 +9,7 @@ public class CometCollisionSys : MonoBehaviour
     public GameObject RateKit;
     public Vector3 CometPos;
     public GameManagerSys deathDetection;
+    public Animator deathCometAnim;
 
     void Start () {
         dropSpeed = 1.0f;
@@ -30,10 +31,11 @@ public class CometCollisionSys : MonoBehaviour
        if(targetObj.gameObject.tag == "Bullet")
         {
             Destroy(targetObj.gameObject);
-            Destroy(gameObject);
             Instantiate(RateKit, CometPos, Quaternion.identity);
             ScoreUI.scr +=1;
             GameManagerSys.deathDetection++;
+            deathCometAnim.GetComponent<Animator>().Play("Death");
+            fruit.GetComponent<BoxCollider2D>().enabled = false;
         } 
     }
 

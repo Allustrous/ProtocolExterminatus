@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2556380638053590894}
   - component: {fileID: 4055639837520371771}
   - component: {fileID: -8353880948910377017}
+  - component: {fileID: 2390272836406541979}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Fragile
@@ -147,3 +148,25 @@ MonoBehaviour:
   Enemy: {fileID: 5999005172836451834}
   MedKit: {fileID: 7483563495550933724, guid: 1905978264999d44ea4f5ee76ea7e4c9, type: 3}
   EnemyPos: {x: 0, y: 0, z: 0}
+  hitDetection: {fileID: 0}
+  deathDetection: {fileID: 0}
+  deathEnemyAnim: {fileID: 2390272836406541979}
+--- !u!95 &2390272836406541979
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5999005172836451834}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3e59020c451d7924c8b6d1f035171e4b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

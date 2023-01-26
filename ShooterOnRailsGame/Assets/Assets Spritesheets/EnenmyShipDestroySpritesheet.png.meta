@@ -1,0 +1,421 @@
+fileFormatVersion: 2
+guid: 320869c237dce974aa1fcd69ad92a39d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6157795902418312412
+    second: EnenmyShipDestroySpritesheet_0
+  - first:
+      213: 1377335630176811216
+    second: EnenmyShipDestroySpritesheet_1
+  - first:
+      213: 1026365036945397516
+    second: EnenmyShipDestroySpritesheet_2
+  - first:
+      213: 333313968862819950
+    second: EnenmyShipDestroySpritesheet_3
+  - first:
+      213: -5764357695465442242
+    second: EnenmyShipDestroySpritesheet_4
+  - first:
+      213: -4900779982568293404
+    second: EnenmyShipDestroySpritesheet_5
+  - first:
+      213: 5602712570075945927
+    second: EnenmyShipDestroySpritesheet_6
+  - first:
+      213: 8555230227080590493
+    second: EnenmyShipDestroySpritesheet_7
+  - first:
+      213: 319525436711552373
+    second: EnenmyShipDestroySpritesheet_8
+  - first:
+      213: -9132820441511810681
+    second: EnenmyShipDestroySpritesheet_10
+  - first:
+      213: 2283282099906668050
+    second: EnenmyShipDestroySpritesheet_11
+  - first:
+      213: 50258538278053667
+    second: EnenmyShipDestroySpritesheet_12
+  - first:
+      213: -104836793295714351
+    second: EnenmyShipDestroySpritesheet_9
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EnenmyShipDestroySpritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 78
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdcdff27fb2e47550800000000000000
+      internalID: 6157795902418312412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnenmyShipDestroySpritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 138
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d87d2d45774d1310800000000000000
+      internalID: 1377335630176811216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnenmyShipDestroySpritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 204
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c07d20d20916e3e00800000000000000
+      internalID: 1026365036945397516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnenmyShipDestroySpritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 204
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e667eb8e94b20a400800000000000000
+      internalID: 333313968862819950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnenmyShipDestroySpritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 137
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e343e738733e000b0800000000000000
+      internalID: -5764357695465442242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnenmyShipDestroySpritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 80
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ebfba0429eecfbb0800000000000000
+      internalID: -4900779982568293404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnenmyShipDestroySpritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 204
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cb1ef5e565d0cd40800000000000000
+      internalID: 5602712570075945927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnenmyShipDestroySpritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 80
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94b2d060984ab670800000000000000
+      internalID: 8555230227080590493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnenmyShipDestroySpritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 140
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 575c4e711be2f6400800000000000000
+      internalID: 319525436711552373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnenmyShipDestroySpritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 212
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 789234a3234b14180800000000000000
+      internalID: -9132820441511810681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnenmyShipDestroySpritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 148
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 216e1f6f8f8dfaf10800000000000000
+      internalID: 2283282099906668050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnenmyShipDestroySpritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 80
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3276ef0dfdd82b000800000000000000
+      internalID: 50258538278053667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnenmyShipDestroySpritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 17
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d7c730fd7b8b8ef0800000000000000
+      internalID: -104836793295714351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

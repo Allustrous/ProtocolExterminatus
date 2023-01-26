@@ -181,7 +181,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5a2eddefc7a182643973300289516c64, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8ea7188698bcbf940917ee2580e77113, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -200,7 +200,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 271325758}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 11, z: 2}
+  m_LocalPosition: {x: 0, y: -16.49, z: 2}
   m_LocalScale: {x: 30.04979, y: 17.0739, z: 12.775851}
   m_Children: []
   m_Father: {fileID: 0}
@@ -839,6 +839,7 @@ GameObject:
   - component: {fileID: 1200751163}
   - component: {fileID: 1200751164}
   - component: {fileID: 1200751165}
+  - component: {fileID: 1200751166}
   m_Layer: 0
   m_Name: PlayerShip
   m_TagString: Player
@@ -928,6 +929,7 @@ MonoBehaviour:
   Scrap: {fileID: 3182362193827220073, guid: 91f6bbaf7da57b543b637fa5e61458af, type: 3}
   Enemy: {fileID: 5999005172836451834, guid: 26a1e9aeb4809d140a9bac6e6896221c, type: 3}
   hitDetection: {fileID: 0}
+  myShip: {fileID: 1200751166}
   hpUI: {fileID: 1200751161}
 --- !u!70 &1200751160
 CapsuleCollider2D:
@@ -1104,6 +1106,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &1200751166
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200751156}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0d1ab5ce14bb8604b9346af05dd36019, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1291851813
 GameObject:
   m_ObjectHideFlags: 0

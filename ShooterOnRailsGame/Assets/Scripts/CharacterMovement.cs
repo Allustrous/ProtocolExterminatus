@@ -12,6 +12,8 @@ public class CharacterMovement : MonoBehaviour
     public static int FireRateMeter = 0;
     public static int BulletVelMeter = 0;
     public GameManagerSys hitDetection;
+    public Animator myShip;
+
 
     
 
@@ -61,6 +63,26 @@ public class CharacterMovement : MonoBehaviour
 
  
         transform.position = new Vector3(xValidPosition, -4, 0f);
+
+        if(Input.GetKeyDown("a"))
+        {
+            PlayerShip.GetComponent<Animator>().Play("Left");
+        }
+        else if(Input.GetKeyUp("a"))
+        {
+            PlayerShip.GetComponent<Animator>().Play("Condor");
+        }
+
+        if(Input.GetKeyDown("d"))
+        {
+            PlayerShip.GetComponent<Animator>().Play("Right");
+        }
+        else if(Input.GetKeyUp("d"))
+        {
+            PlayerShip.GetComponent<Animator>().Play("Condor");
+        }
+
+
 
 
         

@@ -11,6 +11,7 @@ public class EnemyCollisionSys : MonoBehaviour
     public static int enemyDur = 6;
     public GameManagerSys hitDetection;
     public GameManagerSys deathDetection;
+    public Animator deathEnemyAnim;
 
     void Start () {
         dropSpeed = 0.5f;
@@ -31,11 +32,12 @@ public class EnemyCollisionSys : MonoBehaviour
             GameManagerSys.hitDetection++;
             if(enemyDur <= 0)
             {
-                Destroy(gameObject);
                 Instantiate(MedKit, EnemyPos, Quaternion.identity);
                 ScoreUI.scr +=3;
                 enemyDur = 10;
                 GameManagerSys.deathDetection++;
+                deathEnemyAnim.GetComponent<Animator>().Play("Death");
+                Destroy(gameObject);
             }
             
         } 
