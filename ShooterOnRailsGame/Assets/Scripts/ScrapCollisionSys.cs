@@ -34,7 +34,7 @@ public class ScrapCollisionSys : MonoBehaviour
                 scrapDur = 5;
                 GameManagerSys.deathDetection++;
                 deathScrapAnim.GetComponent<Animator>().Play("Death");
-                Destroy(gameObject);
+                Scrap.GetComponent<BoxCollider2D>().enabled = false;
             }
             
         } 

@@ -37,7 +37,7 @@ public class EnemyCollisionSys : MonoBehaviour
                 enemyDur = 10;
                 GameManagerSys.deathDetection++;
                 deathEnemyAnim.GetComponent<Animator>().Play("Death");
-                Destroy(gameObject);
+                Enemy.GetComponent<BoxCollider2D>().enabled = false;
             }
             
         } 
