@@ -1,2 +1,0 @@
-# ProtocolExterminatus
-School project
